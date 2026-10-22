@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <section class="cartao">
+            <p class="etiqueta">DESENVOLVIMENTO DE WEBSITES</p>
+            <h1>Consulta de CEP</h1>
+            <p class="descricao">Digite um CEP para consultar o endereço usando a API ViaCEP.</p>
+
+            <form id="formulario-cep">
+                <label for="cep">CEP</label>
+                <div class="linha-busca">
+                    <input id="cep" name="cep" type="text" inputmode="numeric"
+                           placeholder="Ex.: 13010-111" maxlength="9" required>
+                    <button type="submit" id="botao-buscar">Buscar</button>
+                </div>
+            </form>
+
+            <p id="mensagem" class="mensagem" role="status" aria-live="polite"></p>
+
+            <section id="resultado" class="resultado" hidden>
+                <h2>Endereço encontrado</h2>
+                <div class="campo"><span>Rua:</span><strong id="rua">—</strong></div>
+                <div class="campo"><span>Bairro:</span><strong id="bairro">—</strong></div>
+                <div class="campo"><span>Cidade:</span><strong id="cidade">—</strong></div>
+                <div class="campo"><span>Estado:</span><strong id="estado">—</strong></div>
+                <div class="campo"><span>CEP:</span><strong id="cep-resultado">—</strong></div>
+            </section>
+            <p class="rodape">Dados consultados na API pública ViaCEP.</p>
+        </section>
+    </main>
+</body>
+</html>

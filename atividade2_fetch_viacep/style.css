@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #eaf2ff, #f7f9fc);
+    color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.container {
+    width: 100%;
+    max-width: 620px;
+}
+
+.cartao {
+    background: white;
+    padding: 32px;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(31, 41, 55, 0.12);
+}
+
+.etiqueta {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    margin: 0 0 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.descricao {
+    color: #64748b;
+    line-height: 1.5;
+    margin-bottom: 26px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.linha-busca {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+button {
+    border: 0;
+    border-radius: 9px;
+    padding: 0 22px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+.mensagem {
+    min-height: 24px;
+    margin: 14px 0;
+    font-size: 14px;
+}
+
+.mensagem.erro {
+    color: #b91c1c;
+}
+
+.mensagem.sucesso {
+    color: #15803d;
+}
+
+.resultado {
+    border: 1px solid #dbeafe;
+    border-radius: 12px;
+    padding: 18px;
+    background: #f8fbff;
+    margin-top: 8px;
+}
+
+.resultado h2 {
+    font-size: 18px;
+    margin: 0 0 14px;
+}
+
+.campo {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 9px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.campo:last-child {
+    border-bottom: 0;
+}
+
+.campo span {
+    color: #64748b;
+}
+
+.campo strong {
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.rodape {
+    color: #94a3b8;
+    font-size: 12px;
+    margin: 24px 0 0;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .cartao {
+        padding: 22px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .linha-busca {
+        flex-direction: column;
+    }
+
+    button {
+        padding: 13px;
+    }
+}
